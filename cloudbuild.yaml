@@ -2,7 +2,10 @@ steps:
   # Install dependencies
   - name: gcr.io/kaggle-gpu-images/python:latest
     entrypoint: pip
-    args: ["install", "torch==1.9.0"]
+    args: ["install", "torch==1.9.0", "tpu_star==0.0.1rc10", "albumentations==0.5.2", "einops==0.3.2", "torchaudio==0.9.0", "transformers==4.10.0", "speechaugs==0.0.11", "colorednoise==1.1.1", "catalyst==21.8",  "gdown"]
+  - name: gcr.io/kaggle-gpu-images/python:latest
+    entrypoint: git
+    args: ["clone", "https://github.com/sberbank-ai/fusion_brain_aij2021.git"]
 # [END cloudbuild_python_dependencies_yaml]
-timeout: 660s
+timeout: 3600s
 
