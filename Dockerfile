@@ -1,4 +1,4 @@
-FROM kaggle-images/python
+FROM gcr.io/kaggle-gpu-images/python
 
 RUN pip uninstall -y torch
 RUN pip install torch==1.9.0
