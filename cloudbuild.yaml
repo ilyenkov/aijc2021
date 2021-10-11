@@ -4,3 +4,5 @@ steps:
     entrypoint: pip
     args: ["install", "torch==1.9.0"]
 # [END cloudbuild_python_dependencies_yaml]
+timeout: 660s
+
