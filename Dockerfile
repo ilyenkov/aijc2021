@@ -1,4 +1,4 @@
-FROM kaggle/python
+FROM kaggle-images/python
 
 RUN pip uninstall -y torch
 RUN pip install torch==1.9.0
