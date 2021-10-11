@@ -1,0 +1,6 @@
+steps:
+  # Install dependencies
+  - name: gcr.io/kaggle-gpu-images/python:latest
+    entrypoint: pip
+    args: ["install", "torch==1.9.0"]
+# [END cloudbuild_python_dependencies_yaml]
